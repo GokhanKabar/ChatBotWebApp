@@ -1,0 +1,1 @@
+web gunicorn AIML_Chatbot.wsgi:application --log-file -
