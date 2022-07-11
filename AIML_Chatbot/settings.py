@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-u0lim(s8#5-tb970b+amjwx&hf$f%gn@1pti#s)(*xgz0tkgs6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','gokhanchatwebapp.herokuapp.com']
 
 
 # Application definition
