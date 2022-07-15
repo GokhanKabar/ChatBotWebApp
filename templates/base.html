@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gokhan AIML WebApp</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <title>AIML WebApp</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
         body {
@@ -133,7 +133,7 @@
           <div class="sms-box">
             <form id="myForm">
                 {% csrf_token %}
-                <input class="sms-send" id="msg" name="message" placeholder="Taper un message"/>
+                <input class="sms-send" id="msg" name="message" placeholder="type..."/>
                 <input class="send" type="submit" id="submit" value="Send">
                 <input class="send" type="button" id="reset" value="Reset">
             </form>        
@@ -175,6 +175,7 @@
                     csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
                 },
                 success: function(data){
+                    // alert(data)
                 }
             }); 
             document.getElementById('msg').value = ''
